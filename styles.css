@@ -125,6 +125,14 @@
             display: inline-block;
         }
 
+        /* Íconos dentro de títulos de sección */
+        h2 i {
+        font-size: 1rem;
+        color: #3498db;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+        }
+
         /* About */
         .about-text {
             font-size: 1.1rem;
@@ -216,31 +224,48 @@
         /* Projects */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
+            align-items: stretch;
         }
 
         .project-card {
             background: #f8f9fa;
             padding: 1.5rem;
+            padding-bottom: 1.5rem; /* espacio para enlaces */
             border-radius: 8px;
             border: 1px solid #e9ecef;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            min-height: 320px;
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
 
         .project-card h3 {
             color: #2c3e50;
             margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* centra horizontalmente */
+            gap: 0.5rem;
+            text-align: center;
         }
 
         .project-description {
             color: #7f8c8d;
             margin-bottom: 1rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
         .project-tech {
@@ -259,20 +284,24 @@
         }
 
         .project-links {
+            margin-top: auto;
             display: flex;
+            justify-content: flex-end;
             gap: 1rem;
         }
 
         .project-links a {
             color: #3498db;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: bold;
+            font-size: 0.9rem;
             transition: color 0.3s;
         }
 
         .project-links a:hover {
-            color: #2980b9;
+            color: #2980b9
         }
+
 
         /* Footer */
         footer {
