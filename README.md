@@ -25,5 +25,5 @@ Selenium · Playwright · Postman · Pytest · Jira · Git · Android Studio · 
 ## 📬 Contacto
 
 n6eduardo@gmail.com  
-[LinkedIn](www.linkedin.com/in/eduardo-reyna-hernandez)  
+[LinkedIn](www.linkedin.com/in/eduardo-reyna-hernandez/)  
 [Portfolio Web](https://pinzonseason.github.io/portfolio-site/ )
