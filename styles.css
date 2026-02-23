@@ -157,16 +157,14 @@ h2 i {
     font-size: 1.6rem;
     font-weight: 700;
     color: #2c3e50;
-    display: inline-block;
-    position: relative;
-    padding-bottom: 0.3rem;
-    margin-left: 0;
-    margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* ya lo tienes */
     gap: 0.5rem;
+    text-align: left;
+    margin-bottom: 0.5rem; /* aquí está el espacio extra */
 }
+
 
 .main-skill-title::after {
     content: '';
@@ -342,8 +340,8 @@ h2 i {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
 .project-card h3 {
@@ -372,12 +370,14 @@ h2 i {
 }
 
 .tech-tag {
-    background: #e9ecef;
-    color: #495057;
-    padding: 0.2rem 0.5rem;
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 0.3rem 0.6rem;
     border-radius: 12px;
     font-size: 0.8rem;
+    font-weight: 500;
 }
+
 
 .project-links {
     margin-top: auto;
@@ -387,15 +387,19 @@ h2 i {
 }
 
 .project-links a {
-    color: #3498db;
-    text-decoration: none;
+    display: inline-block;
+    background: #0077b6;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
     font-weight: bold;
     font-size: 0.9rem;
-    transition: color 0.3s;
+    text-decoration: none;
+    transition: background 0.3s ease;
 }
 
 .project-links a:hover {
-    color: #2980b9
+    background: #023e8a;
 }
 
 /* Footer */
